@@ -13,10 +13,10 @@
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/modid/icon.png",
-	"environment": "server",
+	"environment": "*",
 	"entrypoints": {
 		"main": [
-          "com.leclowndu93150.nom.mixin.Main"
+          "com.leclowndu93150.nom.Main"
 		]
 	},
 	"mixins": [

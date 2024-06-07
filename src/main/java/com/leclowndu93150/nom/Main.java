@@ -1,4 +1,4 @@
-package com.leclowndu93150.nom.mixin;
+package com.leclowndu93150.nom;
 
 import net.fabricmc.api.ModInitializer;
 
