@@ -1,11 +1,11 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "nom",
 	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "No Ice Melting",
+	"description": "This is a simple mod that prevents ice melting.",
 	"authors": [
-		"Me!"
+		"Leclowndu93150"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -13,26 +13,19 @@
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/modid/icon.png",
-	"environment": "*",
+	"environment": "server",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
-		],
-		"client": [
-			"com.example.ExampleModClient"
+          "com.leclowndu93150.nom.mixin.Main"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
-		{
-			"config": "modid.client.mixins.json",
-			"environment": "client"
-		}
+		"modid.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.15.10",
-		"minecraft": "~1.20.6",
-		"java": ">=21",
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
 		"fabric-api": "*"
 	},
 	"suggests": {
